@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SpInML | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../static/bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../static/bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../static/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../static/dist/css/skins/_all-skins.min.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="../static/bower_components/morris.js/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="../static/bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="../static/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../static/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="../static/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 50px;
+}
+th, td {
+  padding: 5px;
+}
+</style>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>SpIn</b>ML</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+
+  </header>
+
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    {% include "sidebar.html" %}
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small><strong>Sports Injuries Prediction using Machine Learning</strong></small>
+      </h1>
+
+    </section>
+
+    <!-- Main content -->
+    <div style="margin-left:50px; margin-top:50px;height:600px; width:1200px;background-color:seashell">
+      <p>
+
+      <h1 style="text-align:center">Sports Injuries Prediction using Machine Learning</h1>
+      <h3 style="text-align:center"></h3>
+
+      </p>
+      <h3 style="text-align:center">::: Machine Learning Terminologies :::</h3>
+        <table align="center" border="1">
+        <tr style="text-align: center;background-color:#E8DAEF">
+          <td width="500" style="text-align:center">
+            <h4>Terminology</h4>
+          </td>
+          <td width="500" style="text-align:center">
+            <h4>Description</h4>
+          </td>
+
+        </tr>
+        <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Regression analysis</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Analysis of the relation between a continuous outcome variable and one or more explanatory variables (also called features/predictors/covariates)</h5>
+          </td>
+        </tr>
+          <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Classification analysis</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Analysis of the relation between a categorical outcome variable and one or more explanatory variables (also called features/predictors/covariates)</h5>
+          </td>
+        </tr>
+          <tr>
+
+          <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Cross-validation</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Data splitting technique (either of the entire dataset to evaluate the performance of a ML procedure or of the training set</h5>
+          </td>
+
+          </td>
+
+        </tr>
+
+           <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Feature selection</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Reduction of the number of features by keeping only those that really contribute to the outcome</h5>
+          </td>
+
+                    <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Hyperparameters</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Model parameters that are not automatically learned from the data and so should be provided before fitting the model</h5>
+          </td>
+
+        </tr>
+                            <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Ensemble learning</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Ensemble learning	Combination of individual (weak) ML techniques to yield a more precise prediction</h5>
+          </td>
+
+        </tr>
+
+                                     <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Bootstrapping</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Sampling technique where new data sets are created by drawing with replacement from the original data set</h5>
+          </td>
+
+        </tr>
+                                            <tr>
+
+            <td width="650" align="center" style="background-color:white">
+            <h5>Bagging</h5>
+          </td>
+          <td width="650" align="center" style="background-color:white">
+            <h5>Bagging	Short for “bootstrap aggregating”, an ensemble learning technique that aggregates the predictions of several bootstrapped data sets</h5>
+          </td>
+
+        </tr>
+      </table>
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <!-- Control Sidebar -->
+
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+</div>
+
+</body>
+</html>

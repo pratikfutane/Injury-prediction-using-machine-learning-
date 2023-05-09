@@ -1,0 +1,112 @@
+<section class="sidebar">
+      <!-- Sidebar user panel -->
+
+
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header" style="color: white">MAIN NAVIGATION</li>
+        <li class="treeview">
+          <a href="{{ url_for('index') }}">
+            <i class="fa fa-files-o"></i>
+            <span>Dashboard</span>
+
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="{{ url_for('home') }}">
+            <i class="fa fa-files-o"></i>
+            <span>Home</span>
+
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="{{ url_for('datasetview') }}">
+            <i class="fa fa-files-o"></i>
+            <span>DataSet View</span>
+
+          </a>
+        </li>
+
+<!--        <li>-->
+<!--          <a href="{{ url_for('datasetdetails') }}">-->
+<!--            <i class="fa fa-pie-chart"></i>-->
+<!--            <span>Feature Selection</span>-->
+<!--          </a>-->
+<!--        </li>-->
+        <li>
+          <a href="{{ url_for('statdetails') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Statistical Details</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('visualizations') }}">
+            <i class="fa fa-pie-chart"></i>
+
+            <span>Exploratory Analysis</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('distribution') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Distribution Analysis</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('frequency') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Frequency Distribution</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('preprocessing') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Data Preprocessing</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('finaldata') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Final Data</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('clustering') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Machine Learning</span>
+          </a>
+        </li>
+<!--        <li>-->
+<!--          <a href="{{ url_for('classification') }}">-->
+<!--            <i class="fa fa-pie-chart"></i>-->
+<!--            <span>Classification</span>-->
+<!--          </a>-->
+<!--        </li>-->
+
+        <li>
+          <a href="{{ url_for('compana') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Comparitive Analysis</span>
+          </a>
+        </li>
+<!--        <li>-->
+<!--          <a href="{{ url_for('dataviz') }}">-->
+<!--            <i class="fa fa-pie-chart"></i>-->
+<!--            <span>Classification Report</span>-->
+<!--          </a>-->
+<!--        </li>-->
+        <li>
+          <a href="{{ url_for('terminology') }}">
+            <i class="fa fa-pie-chart"></i>
+            <span>Terminology</span>
+          </a>
+        </li>
+<!--        <li>-->
+<!--          <a href="{{ url_for('algorithms') }}">-->
+<!--            <i class="fa fa-pie-chart"></i>-->
+<!--            <span>Algorithms</span>-->
+<!--          </a>-->
+<!--        </li>-->
+      </ul>
+    </section>
